@@ -1,11 +1,12 @@
 import React from "react";
-import { Navbar } from "../Navbar";
+import Hero from "../Hero";
 
 export const Home = () => {
   return (
-    <div className="home">
-      <h1>Home</h1>
-    </div>
+    <section className="home">
+
+      <Hero />
+    </section>
 
   )
 };

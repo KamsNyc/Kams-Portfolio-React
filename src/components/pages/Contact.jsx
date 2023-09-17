@@ -3,6 +3,6 @@ import { Navbar } from "../Navbar";
 
 export const Contact = () => {
   return (
-    <Navbar />
+    <div className=""></div>
   );
 };

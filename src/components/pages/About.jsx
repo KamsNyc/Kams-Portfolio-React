@@ -3,6 +3,7 @@ import { Navbar } from "../Navbar";
 
 export const About = () => {
   return (
-    <Navbar />
+
+    <div className=""></div>
   )
 };

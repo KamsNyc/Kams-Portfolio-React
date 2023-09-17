@@ -3,7 +3,7 @@ import { Navbar } from '../Navbar'
 
 function Projects() {
   return (
-    <Navbar />
+    <div className=""></div>
   )
 }
 
