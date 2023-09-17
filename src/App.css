@@ -18,6 +18,10 @@
   h2 {
       @apply text-3xl sm:text-4xl;
   }
+  
+  p {
+       @apply text-base;
+  }
 
   li {
       @apply cursor-pointer;

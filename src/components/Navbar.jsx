@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { CgMenuRound } from "react-icons/cg";
 import { AiOutlineCloseCircle, AiFillProfile } from "react-icons/ai";
@@ -6,15 +6,15 @@ import { BiLogoGithub, BiLogoLinkedinSquare } from "react-icons/bi";
 import { MdMarkEmailUnread } from "react-icons/md";
 
 export const Navbar = () => {
-    const [navOpen, setNavOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
 
-    const toggleNav = () => {
-        setNavOpen(!navOpen);
-    };
+  const toggleNav = () => {
+    setNavOpen(!navOpen);
+  };
 
   return (
-    <nav className="sticky my-4 w-full h-[60px] shadow-xl z-50  bg-red-300">
-      <div className="flex items-center justify-between w-[] h-full px-16 2xl:px-32">
+    <nav className={`sticky top-0 z-50 ${navOpen ? 'bg-white' : 'bg-transparent'}`}>
+      <div className="flex items-center justify-between w-full h-[60px] px-8 2xl:px-32">
         <img src="../src/assets/logo.png" alt="Kamel Logo" width="115px" />
         <div className="">
           <ul className="hidden md:flex">
@@ -40,7 +40,7 @@ export const Navbar = () => {
         </div>
       </div>
 
-      <aside className={navOpen ? "fixed left-0 top-0 w-full h-screen md:hidden bg-black/60": ''}>
+      <aside className={navOpen ? "fixed top-0 left-0 w-full h-screen md:hidden bg-black/60" : ''}>
         <section className={navOpen ? "fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-full bg-white p-9 ease-in duration-500" : "fixed top-0 left-[-100%] p-9 ease-in duration-500"}>
           <div className="">
             <section className="flex w-full items-center justify-between">
@@ -52,7 +52,6 @@ export const Navbar = () => {
 
             <section className="border-b border-gray-300 my-4">
               <p className="w-[85%] md:w-[90%] py-4"> Let's build together.</p>
-
             </section>
           </div>
 
@@ -75,11 +74,10 @@ export const Navbar = () => {
               </li>
             </ul>
 
-            <section className="pt-40">
+            <section className="pt-20 h-full">
               <p className="uppercase tracking-widest text-black">
                 Let's Connect
               </p>
-
 
               <div className="flex items-center justify-between my-4 w-full sm:w-[70%] ">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
