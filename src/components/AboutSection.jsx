@@ -27,8 +27,8 @@ function AboutSection() {
     </div>
     <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
       <img
-        className="rounded-xl"
-        src="https://source.unsplash.com/1600x500/?abstract"
+        className="rounded-xl mt-8"
+        src="https://source.unsplash.com/1500x2000/?abstract"
         alt="test"
       />
     </div>

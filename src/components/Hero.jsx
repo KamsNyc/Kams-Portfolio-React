@@ -9,10 +9,10 @@ function Hero() {
       <div className="max-w-[1024px] w-full h-full mx-auto flex justify-center items-center">
         <div className="">
           <div className=" lg:bg-[#f7f7f7] rounded-2xl p-4">
-            <p className="uppercase text-sm p-4 text-black font-medium tracking-widest">
+            <p className="uppercase text-sm p-2 text-black font-medium tracking-widest">
               Designing, Developing, Improving! Everyday
             </p>
-            <h1 className=" text-gray-700 lg:py-4">
+            <h1 className=" text-gray-700 lg:py-4 py-2">
               Hi, I'm <span className="text-[#fd8b49] ">Kamel</span>
             </h1>
             <h1 className="pt-2 pb-2 text-gray-700 md:font-lg">A Full-Stack Web Developer</h1>

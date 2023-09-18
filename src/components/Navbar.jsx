@@ -58,7 +58,7 @@ export const Navbar = () => {
           <section className="py-4 flex flex-col">
             <ul className="uppercase">
               <li className="py-4 text-sm">
-                <Link to={"/home"}>Home</Link>
+                <Link to={"/"}>Home</Link>
               </li>
               <li className="py-4 text-sm">
                 <Link to={"/about"}>About</Link>
