@@ -1,12 +1,22 @@
 import React from "react";
 import Hero from "../Hero";
+import Skills from "../Skills";
+import AboutSection from "../AboutSection";
 
 export const Home = () => {
   return (
-    <section className="home">
+    <section id="home">
+      <section className="hero">
+        <Hero />
+      </section>
 
-      <Hero />
+      <section id="about">
+      <AboutSection />
+      </section>
+
+      <section id="skills">
+        <Skills />
+      </section>
     </section>
-
-  )
+  );
 };
