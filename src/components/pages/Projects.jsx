@@ -1,9 +1,11 @@
 import React from 'react'
-import { Navbar } from '../Navbar'
+import ComingSoon from '../Comingsoon'
 
 function Projects() {
   return (
-    <div className=""></div>
+    <div className="">
+      <ComingSoon />
+    </div>
   )
 }
 

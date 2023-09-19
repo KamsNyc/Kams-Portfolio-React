@@ -1,8 +1,10 @@
 import React from "react";
-import { Navbar } from "../Navbar";
+import ComingSoon from "../Comingsoon";
 
 export const Contact = () => {
   return (
-    <div className=""></div>
+    <div className="">
+      <ComingSoon />
+    </div>
   );
 };

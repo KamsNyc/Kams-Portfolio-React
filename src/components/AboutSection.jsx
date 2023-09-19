@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutSection() {
   return (
-    <section id="about" className="w-full p-2 flex items-center">
+    <section id="about" className="w-full p-8 flex items-center">
   <div className="max-w-[1248px] m-auto md:grid grid-cols-3 gap-8">
     <div className="col-span-2">
       <p className="uppercase text-xl tracking-widest text-[#FD8B49]">About</p>
@@ -23,13 +23,13 @@ function AboutSection() {
       </p>
 
   
-      <p className="py-2">
+      <p className="py-4">
         <p>Check out the <a className=' font-bold underline hover:text-[#FD8E4E] ease-in duration-300' href=''>Full about me</a> or <a className=' font-bold underline hover:text-[#FD8E4E] ease-in duration-300' href=''>some of my latest projects</a></p>
       </p>
     </div>
     <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
       <img
-        className="rounded-xl"
+        className="rounded-xl cursor-pointer"
         src="https://source.unsplash.com/1500x2000/?abstract"
         alt="test"
       />

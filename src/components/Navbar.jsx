@@ -13,9 +13,15 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className={`sticky top-0 z-50 ${navOpen ? 'bg-white' : 'bg-transparent'}`}>
+    <nav
+      className={`sticky top-0 z-50 ${
+        navOpen ? "bg-white" : "bg-white shadow-lg"
+      }`}
+    >
       <div className="flex items-center justify-between w-full h-[60px] px-8 2xl:px-32">
-        <img src="../src/assets/logo.png" alt="Kamel Logo" width="115px" />
+        <Link to={"/"}>
+          <img src="../src/assets/logo.png" alt="Kamel Logo" width="115px" />
+        </Link>
         <div className="">
           <ul className="hidden md:flex">
             <li className="ml-10 text-sm uppercase hover:border-b">
@@ -35,17 +41,38 @@ export const Navbar = () => {
             </li>
           </ul>
           <section onClick={toggleNav} className="md:hidden">
-            <CgMenuRound size={35} />
+            <CgMenuRound className="cursor-pointer hover:scale-110 ease-in duration-200" size={35} />
           </section>
         </div>
       </div>
 
-      <aside className={navOpen ? "fixed top-0 left-0 w-full h-screen md:hidden bg-black/60" : ''}>
-        <section className={navOpen ? "fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-full bg-white p-9 ease-in duration-500" : "fixed top-0 left-[-100%] p-9 ease-in duration-500"}>
+      <aside
+        className={
+          navOpen
+            ? "fixed top-0 left-0 w-full h-screen md:hidden bg-black/60"
+            : ""
+        }
+      >
+        <section
+          className={
+            navOpen
+              ? " rounded-md fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-full bg-white p-9 ease-in duration-500"
+              : "fixed top-0 left-[-100%] p-9 ease-in duration-500"
+          }
+        >
           <div className="">
             <section className="flex w-full items-center justify-between">
-              <img src="../src/assets/logo.png" alt="Kamel" width="100px" />
-              <div onClick={toggleNav} className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer">
+              <Link to={"/"}>
+                <img
+                  src="../src/assets/logo.png"
+                  alt="Kamel Logo"
+                  width="100px"
+                />
+              </Link>
+              <div
+                onClick={toggleNav}
+                className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer"
+              >
                 <AiOutlineCloseCircle size={30} />
               </div>
             </section>
