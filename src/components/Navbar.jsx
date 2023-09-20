@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CgMenuRound } from "react-icons/cg";
 import { AiOutlineCloseCircle, AiFillProfile } from "react-icons/ai";
@@ -7,17 +7,26 @@ import { MdMarkEmailUnread } from "react-icons/md";
 
 export const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
   const toggleNav = () => {
     setNavOpen(!navOpen);
   };
 
+  useEffect(() => {
+    const toggleNavShadow = () => {
+      const isAtTop = window.scrollY <= 90;
+      setShadow(!isAtTop);
+    };
+    window.addEventListener("scroll", toggleNavShadow);
+
+  }, []);
+
   return (
     <nav
-      className={`sticky top-0 z-50 ${
-        navOpen ? "bg-white" : "bg-white shadow-lg"
-      }`}
-    >
+    className={`sticky top-0 z-50 ${
+      navOpen ? "bg-white" : shadow ? "bg-white shadow-2xl" : "bg-white"
+    }`} >
       <div className="flex items-center justify-between w-full h-[60px] px-8 2xl:px-32">
         <Link to={"/"}>
           <img src="../src/assets/logo.png" alt="Kamel Logo" width="115px" />
@@ -78,7 +87,7 @@ export const Navbar = () => {
             </section>
 
             <section className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4"> Let's build together.</p>
+              <p className="w-[85%] md:w-[90%] py-4"> Open to web, UI/UX, and exciting tech collaborations.</p>
             </section>
           </div>
 

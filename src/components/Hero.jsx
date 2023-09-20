@@ -5,7 +5,7 @@ import { MdMarkEmailUnread } from "react-icons/md";
 
 function Hero() {
   return (
-    <div className="w-full h-screen text-center">
+    <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1024px] w-full h-full mx-auto flex justify-center items-center">
         <div className="">
           <div className=" lg:bg-[#f7f7f7] rounded-2xl p-4">

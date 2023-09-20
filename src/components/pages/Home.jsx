@@ -3,25 +3,30 @@ import Hero from "../Hero";
 import Skills from "../Skills";
 import AboutSection from "../AboutSection";
 import ProjectSection from "../ProjectSection";
+import ContactSection from "../ContactSection";
+
 
 export const Home = () => {
   return (
-    <section id="home">
+    <section >
       <section className="hero">
         <Hero />
       </section>
 
-      <section id="about">
+      <section >
       <AboutSection />
       </section>
 
-      <section id="skills">
+      <section>
         <Skills />
       </section>
 
-      <section id="projects">
-        <ProjectSection/>
-        
+      <section >
+        <ProjectSection />
+      </section>
+
+      <section >
+        <ContactSection />
       </section>
 
     </section>

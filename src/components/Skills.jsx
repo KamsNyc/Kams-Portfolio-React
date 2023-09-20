@@ -2,7 +2,7 @@ import React from "react";
 
 function Skills() {
   return (
-    <section className="w-full pt-6 p-8">
+    <section id="skills" className="w-full pt-6 p-8">
 
       {/* FRONT END SKILLS */}
 
@@ -10,7 +10,7 @@ function Skills() {
       <p className="text-xl tracking-widest uppercase text-[#FD8B49]">
           Skills
         </p>
-      <h2 className="py-4">What I Can Do</h2>
+      <h3 className="py-4 text-[30px]">What I Can Do</h3>
         <p className="pt-8 text-xl tracking-widest uppercase text-[#FD8B49]">
           Fontend Skills
         </p>
